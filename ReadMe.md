@@ -105,7 +105,7 @@ Our code is primarily based on Transformers and Llama-Factory.
 
 ## Environment Setup
 ### Prepare Enviroment
-Our environment is largely consistent with the dependencies of Transformers 4.45.2 and LLaMA-Factory 0.9.1.dev0. The following are the steps to set up our environment.
+The process of setting up our environment primarily involves installing modified versions of Transformers 4.45.2 and LLaMA-Factory 0.9.1.dev0. The following are the steps to create our environment.
 ```bash
 # clone transformers 4.45.2
 git clone https://github.com/huggingface/transformers.git
