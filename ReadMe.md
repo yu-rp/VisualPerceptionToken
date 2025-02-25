@@ -8,7 +8,7 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-# [Introducing Visual Perception Token into Multimodal Large Language Model](https://arxiv.org/abs/) 
+# [Introducing Visual Perception Token into Multimodal Large Language Model](https://arxiv.org/abs/2502.17425) 
 <!-- (2025) -->
 
 TL;DR (1) - Allow the MLLM to **control** its own vision perception process.
@@ -16,7 +16,7 @@ TL;DR (1) - Allow the MLLM to **control** its own vision perception process.
 TL;DR (2) - Treat visual perception as a function calling process and control the perception process through **Visual Perception Tokens**. The MLLM outputs Visual Perception Tokens in the same manner as natural language tokens.
 
 <p align="left">
-[<a href="https://arxiv.org/abs/">Paper</a>] 
+[<a href="https://arxiv.org/abs/2502.17425">Paper</a>] 
 <!-- [<a href="https://huggingface.co/spaces/rp-yu/">Playground</a>] -->
 [<a href="https://huggingface.co/collections/rp-yu/vpt-models-67b6afdc8679a05a2876f07a">Models</a>]
 [<a href="https://huggingface.co/datasets/rp-yu/VPT_Datasets">Datasets</a>]
@@ -160,15 +160,17 @@ The folder `evaluation` contains the code for evaluation. Run `python evaluation
 <p align="right"><a href="#readme-top"><img src=https://img.shields.io/badge/back%20to%20top-red?style=flat
 ></a></p>
 
-<!-- ## Citation
+## Citation
 If you find our work useful, please cite using this BibTeX:
 ```bibtex
-@misc{yu2024api,
+@misc{yu2025vpt,
       title={Introducing Visual Perception Token into Multimodal Large Language Model}, 
       author={Runpeng Yu and Xinyin Ma and Xinchao Wang},
       year={2025},
-      booktitle={},
+      eprint={2502.17425},
+      archivePrefix={arXiv},
 }
 ```
+<!-- booktitle={Preprint},  -->
 <p align="right"><a href="#readme-top"><img src=https://img.shields.io/badge/back%20to%20top-red?style=flat
-></a></p> -->
+></a></p>
