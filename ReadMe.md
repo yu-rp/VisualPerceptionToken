@@ -117,7 +117,7 @@ cp "VPT/transformers/src/transformers/models/qwen2_vl_vpt/modeling_qwen2_vl_vpt.
 # modify the path of transformers and llama-factory in env.yml file
 # create environment
 cd /to/this/folder
-conda env create -f environment.yml
+conda env create -f env.yml
 ```
 
 ### Prepare Dataset
