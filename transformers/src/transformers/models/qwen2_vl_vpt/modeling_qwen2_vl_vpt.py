@@ -320,6 +320,7 @@ class VPT_Qwen2VLProcessor(Qwen2VLProcessor):
         self.seg_processor = SamProcessor.from_pretrained("facebook/sam-vit-large")
 
 class VPT_Qwen2VLConfig(Qwen2VLConfig):
+    model_type = "qwen2_vl_vpt"
 
     def __init__(
             self, 
@@ -413,6 +414,7 @@ class VPT_Qwen2VLForConditionalGeneration(Qwen2VLForConditionalGeneration):
                                       seg_images=None, **kwargs):
             Prepares inputs for the generation process, handling various types of visual inputs and cache positions.
     """
+    config_class = VPT_Qwen2VLConfig
 
     def __init__(self, config):
         super().__init__(config)
