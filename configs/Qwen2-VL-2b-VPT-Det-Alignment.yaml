@@ -3,7 +3,7 @@ model_name_or_path: Qwen/Qwen2-VL-2B-Instruct
 new_special_tokens: <|detection_image_pad|>
 resize_vocab: true
 additional_target: embed_tokens,lm_head
-customize_model_class: vrt # must be set as this for our model, must be set None for original qwen
+customize_model_class: vpt # must be set as this for our model, must be set None for original qwen
 num_inner_forward_run: 1
 para_mask_id: 0
 para_mask_ratio: 0.0
@@ -18,7 +18,7 @@ deepspeed: examples/deepspeed/ds_z0_config.json
 
 ### dataset
 dataset: llava_alignment_detection_qwen_response_train 
-template: vrt_qwen2_vl # must be set as this for our model, must be set qwen2_vl for oiginal qwen
+template: vpt_qwen2_vl # must be set as this for our model, must be set qwen2_vl for oiginal qwen
 cutoff_len: 2048
 max_samples: 600000 # 50000
 overwrite_cache: true
