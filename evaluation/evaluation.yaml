@@ -1,6 +1,6 @@
 ### model
 model_name_or_path: /model
-customize_model_class: vrt # must be set as this for our model, must be set None for original qwen
+customize_model_class: vpt # must be set as this for our model, must be set None for original qwen
 num_inner_forward_run: 2
 para_mask_id: 0
 para_mask_ratio: 0.0
@@ -14,7 +14,7 @@ freefreeze_frozen_modules: "all"
 
 ### dataset
 eval_dataset: eval_dataset
-template: vrt_qwen2_vl
+template: vpt_qwen2_vl
 cutoff_len: 2048
 overwrite_cache: true
 preprocessing_num_workers: 16

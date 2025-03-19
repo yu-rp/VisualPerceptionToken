@@ -4,7 +4,7 @@ model_name_or_path: /root/LLaMA-Factory-saves/saves/qwen2_vl-2b/alignment/llava_
 new_tokens: <|region_token_start|>,<|region_token_end|>,<|x_0|>,<|x_1|>,<|x_2|>,<|x_3|>,<|x_4|>,<|x_5|>,<|x_6|>,<|x_7|>,<|y_0|>,<|y_1|>,<|y_2|>,<|y_3|>,<|y_4|>,<|y_5|>,<|y_6|>,<|y_7|>,<|detection_action_start|>,<|detection_action|>,<|detection_action_end|>
 resize_vocab: true
 additional_target: embed_tokens,lm_head
-customize_model_class: vrt # must be set as this for our model, must be set None for original qwen
+customize_model_class: vpt # must be set as this for our model, must be set None for original qwen
 num_inner_forward_run: 2
 ara_mask_id: 1
 para_mask_ratio: 0.5
@@ -20,7 +20,7 @@ deepspeed: examples/deepspeed/ds_z0_config.json
 
 ### dataset
 dataset: MixVRT_Detection_Full 
-template: vrt_qwen2_vl # must be set as this for our model, must be set qwen2_vl for oiginal qwen
+template: vpt_qwen2_vl # must be set as this for our model, must be set qwen2_vl for oiginal qwen
 cutoff_len: 2048
 # max_samples: not used in streaming
 overwrite_cache: true
