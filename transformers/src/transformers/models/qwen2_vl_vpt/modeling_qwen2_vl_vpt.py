@@ -850,7 +850,7 @@ class VPT_Qwen2VLForConditionalGeneration(Qwen2VLForConditionalGeneration):
         else:
             raise ValueError("Number of inner forward runs should be 1 or 2.")
 
-        self.check_validity(outputs[0])
+        # self.check_validity(outputs[0])
 
         hidden_states = outputs[0]
         logits = self.lm_head(hidden_states)
